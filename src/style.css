@@ -1,0 +1,44 @@
+
+#checkSearch:focus ~ .search-part {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 0, 0.711);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: yellow;
+}
+
+::-moz-scrollbar {
+    width: 8px;
+}
+::-moz-scrollbar-thumb {
+    background-color: rgba(255, 255, 0, 0.711);
+}
+::-moz-scrollbar-thumb:hover {
+    background-color: yellow;
+}
+
+::-ms-scrollbar {
+    width: 8px;
+}
+::-ms-scrollbar-thumb {
+    background-color: rgba(255, 255, 0, 0.711);
+}
+::-ms-scrollbar-thumb:hover {
+    background-color: yellow;
+}
+
+::-o-scrollbar {
+    width: 8px;
+}
+::-o-scrollbar-thumb {
+    background-color: rgba(255, 255, 0, 0.711);
+}
+::-o-scrollbar-thumb:hover {
+    background-color: yellow;
+}

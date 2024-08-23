@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Links Css Files -->
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Links Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Vanilla tilt cdn  3D-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ----------  Shortcut Icon -------- -->
+    <link rel="shortcut icon" href="img/icon.jfif" type="image/x-icon">
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <!-- Start Meta Tages ******************-->
+    <title>Amazon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Regular Meta Info -->
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="Create your Amazon account to start shopping today. Register for a new account to access exclusive deals, fast shipping, and personalized recommendations. Join now to enjoy a seamless shopping experience." />
+
+    <meta name="keywords"
+        content="account registration, create account, Amazon registration, sign up, new account, join Amazon, register now, account setup, user registration, Amazon sign-up, create profile, account benefits, online registration" />
+
+    <link rel="author" href="kerolos khairy" />
+    <link rel="canonical" href="https://kerllouskhairy987.github.io/amazon/" />
+    <!-- Link Of The Main Page From GitHub If I Have Alot Of Same Pages -->
+
+    <!-- Facebook Meta Info -->
+    <meta property="og:image" content="https://kerllouskhairy987.github.io/amazon//img/head-imgs/reg.jpg" />
+    <meta property="og:description"
+        content="Create your Amazon account to start shopping today. Register for a new account to access exclusive deals, fast shipping, and personalized recommendations. Join now to enjoy a seamless shopping experience." />
+    <meta property="og:title" content="Home > Amazon" />
+    <meta property="og:site_name" content="Amazon" />
+    <meta property="og:see_also" content="https://kerllouskhairy987.github.io/amazon/" />
+    <!-- Link Of Home Page GitHub -->
+
+    <!-- Google+ Meta Info -->
+    <meta itemprop="name" content="Amazon" />
+    <meta itemprop="description"
+        content="Create your Amazon account to start shopping today. Register for a new account to access exclusive deals, fast shipping, and personalized recommendations. Join now to enjoy a seamless shopping experience." />
+    <meta itemprop="image" content="https://kerllouskhairy987.github.io/amazon//img/head-imgs/reg.jpg" />
+
+    <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://kerllouskhairy987.github.io/amazon/" />
+    <meta name="twitter:title" content="Amazon" />
+    <meta name="twitter:description"
+        content="Create your Amazon account to start shopping today. Register for a new account to access exclusive deals, fast shipping, and personalized recommendations. Join now to enjoy a seamless shopping experience." />
+    <meta name="twitter:image" content="https://kerllouskhairy987.github.io/amazon//img/head-imgs/reg.jpg" />
+
+    <!-- End Meta Tages *********************-->
+
+</head>
+
+<body>
+
+    <header class="flex items-center justify-center bg-[#131921] py-1 px-4">
+        <a title="Home Page" href="index.html"><img class="w-28 me-5" src="img/logo.png" alt="Logo Image"></a>
+        <a title="Register Page" href="signin.html" class="btn-sign py-2">Sign In</a>
+    </header>
+
+    <video muted autoplay loop class="vedeo-sign min-h-[calc(100%+130px)]"
+        poster="https://png.pngtree.com/background/20230616/original/pngtree-people-stand-in-the-aisle-during-a-walmart-food-court-sales-picture-image_3637612.jpg">
+        <source
+            src="https://st4.depositphotos.com/7933982/37796/v/600/depositphotos_377966436-stock-video-young-woman-in-medical-mask.mp4">
+        Your Browser Does Not Support This Type Of Vedeo
+    </video>
+
+    <div class="flex justify-center items-center text-white select-none mt-20 ">
+        <div class="bg-black/50 p-4 relative w-full lg:w-[600px]">
+
+
+            <form method="get">
+                <h2 class="font-bold text-lg">Sign Up</h2>
+
+                <label for="imgUrl" class="block my-7">
+                    <div title="Choose Your Image" class="image-reg">
+                        <img src="img/user.png" class="w-full h-full rounded-full object-cover" alt="profile image">
+                        <span class="add-img-reg"><i class="fa-solid fa-pen"></i></span>
+                    </div>
+                    <input type="file" name="imagUrl" id="imgUrl" class="hidden">
+                </label>
+                <!-- ---------------------------------- -->
+                <label for="username" class="flex relative">
+                    <span class="icons-input"><i class="fa-solid fa-user"></i></span>
+                    <input class="custemize-input" type="text" placeholder="Enter Your Username..." name="username"
+                        id="username">
+                    <p id="notvalidUser" class="not-valid"></p>
+                </label>
+                <!-- --------------------------------- -->
+                <label for="email" class="flex my-7 relative">
+                    <span class="icons-input"><i class="fa-solid fa-at"></i></span>
+                    <input class="custemize-input" type="email" placeholder="Enter Your Email..." name="email"
+                        id="email">
+                    <p id="notvalidEmail" class="not-valid"></p>
+                </label>
+                </label>
+                <!-- ----------------------------------- -->
+                <label for="password" class="flex relative">
+                    <span class="icons-input"><i class="fa-solid fa-key"></i></span>
+                    <input class="custemize-input pe-7 pass_field" type="password" placeholder="Enter Your password..."
+                        name="password" id="password">
+                    <label class="show-pass" for="passCheck">
+                        <span class="hover:bg-gray-400 p-2 block your-element"><i class="fa-solid fa-eye"></i></span>
+                        <input type="checkbox" name="check" id="passCheck" class="hidden">
+                    </label>
+
+                    <p id="notvalidPass" class="not-valid"></p>
+                </label>
+                <!-- ----------------------------------- -->
+                <label for="passwordCon" class="flex relative mt-7">
+                    <span class="icons-input"><i class="fa-solid fa-check-double"></i></span>
+
+                    <input class="custemize-input pe-7 pass_field" type="password"
+                        placeholder="Enter Your Confirm password..." name="passwordCon" id="passwordCon">
+
+                    <label class="show-pass show-pass-con" for="passCheckCon">
+                        <span class="hover:bg-gray-400 p-2 block your-element"><i class="fa-solid fa-eye"></i></span>
+                        <input type="checkbox" name="checkCon" id="passCheckCon" class="hidden">
+                    </label>
+                    <p id="notvalidPassCon" class="not-valid flex-nowrap"></p>
+                </label>
+                <!-- ------------------------------------ -->
+                <div class="text-right">
+                    <span class="cursor-pointer hover:underline">Forget Password</span>
+                    <div class="flex">
+                        <input id="remmber" type="checkbox" name="checkbox" class="accent-yellow-600 text-white">
+                        <label for="remmber" class="ms-1 cursor-pointer">remmber me</label>
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+                <button id="signUp" class="btn-sign your-element">LogUp</button>
+
+                <a class="text-green-500 text-xs text-center my-5 block" href="signin.html">Have An Account
+                    <span class="underline text-sm font-bold">Go To LogIn</span></a>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- JS Links Files -->
+    <script src="js/signUp.js"></script>
+</body>
+
+</html>

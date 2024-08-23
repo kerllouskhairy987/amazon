@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-center-between {
+    @apply flex justify-between items-center py-1 px-3;
+  }
+  .around-border {
+    @apply hover:border hover:border-white p-1;
+  }
+  /* ***************************************** */
+  /* Scroll To Top Style */
+  .scroll-to-top-style {
+    @apply fixed bottom-4 right-4 p-4 bg-[#122C41] rounded-full text-white max-w-10 max-h-10 flex items-center justify-center font-bold text-xl z-[10000] transition-all duration-700 border border-white scale-0;
+  }
+  /* Aside */
+  .overlay {
+    @apply fixed top-0 left-0 w-full h-full bg-black/60 z-[200] hidden;
+  }
+  .overlay.active {
+    @apply block;
+  }
+  .aside-part {
+    @apply fixed top-0 left-0 w-full md:w-96 max-h-screen h-full overflow-auto z-[210] bg-white p-5 md:p-10 transition-all duration-300 -translate-x-full;
+  }
+  .aside-part.active {
+    @apply -translate-x-0;
+  }
+  .close-aside {
+    @apply transition w-10 h-10 rounded-full text-blue-600 cursor-pointer hover:bg-red-600 hover:text-white p-2 ml-auto font-bold text-xl flex justify-center items-center;
+  }
+  .signin {
+    @apply flex items-center font-medium bg-[#122c41] mx-3 p-3 text-white mt-3;
+  }
+  /* Start Nav */
+  .nav-style {
+    @apply text-white lg:flex flex-wrap px-5 py-1 items-center bg-[#131921];
+  }
+  .nav-style-two {
+    @apply flex items-center bg-[#122c41] text-white justify-between px-5 py-1;
+  }
+  .nav-style .location {
+    @apply around-border me-3 font-bold hidden sm:flex;
+  }
+  .nav-style .search-part {
+    @apply w-full bg-white shadow-sm text-black absolute hidden text-xs lg:text-sm z-[100];
+  }
+  .nav-style #listLinks {
+    @apply items-center hidden lg:flex justify-between mt-5 lg:mt-0;
+  }
+  .nav-style #listLinks #counter {
+    @apply text-xs block w-fit -translate-y-3 text-red-400;
+  }
+  .nav-style #listLinks.active {
+    @apply flex;
+  }
+  /* Home Part */
+  .home-part-index {
+    @apply container gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mt-3 md:-mt-48 2xl:-mt-[380px] relative z-50;
+  }
+  .title-home {
+    @apply font-semibold text-lg text-center py-8 z-50 h-32;
+  }
+  .read-more-home {
+    @apply text-xs text-blue-600 hover:underline hover:text-red-600 ps-3;
+  }
+  /* Footer */
+  .footer-head {
+    @apply text-lg font-bold mb-4;
+  }
+  .footer-link {
+    @apply hover:underline cursor-pointer text-gray-500 mb-2;
+  }
+  .least-footer-desc {
+    @apply w-fit mx-auto mt-7 text-xs md:text-lg text-center;
+  }
+  /* *************************************************** */
+  /* Sign */
+  .vedeo-sign {
+    @apply absolute top-0 left-0 min-w-full min-h-full object-cover -z-10;
+  }
+  .icon-sign {
+    @apply shadow w-10 h-10 bg-yellow-600 flex justify-center items-center text-white  cursor-pointer rounded text-2xl hover:bg-gray-100 hover:text-black transition-all;
+  }
+  .custemize-input {
+    @apply grow p-2 outline-none border-2 border-transparent text-black;
+  }
+  .icons-input {
+    @apply bg-yellow-600 min-h-full px-3 flex items-center;
+  }
+  .show-pass {
+    @apply absolute right-1 text-yellow-600 cursor-pointer top-1/2 -translate-y-1/2;
+  }
+  .btn-sign {
+    @apply w-fit ml-auto block rounded tracking-widest font-medium my-2 bg-yellow-600 p-3 hover:bg-gray-100 hover:text-black transition-all;
+  }
+  .image-reg {
+    @apply w-24 h-24 bg-black mx-auto rounded-full relative cursor-pointer;
+  }
+  .add-img-reg {
+    @apply absolute p-1 border-2 border-black rounded -right-4 bottom-0 text-xs font-bold;
+  }
+  .not-valid {
+    @apply absolute -bottom-4 text-red-600 text-sm font-bold
+  }
+  /* ******************************************************* */
+  /* Deal Page  */
+  .deal-style-product {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 bg-white;
+  }
+  /* ******************************************************* */
+  /* Contact Page  */
+  .input-contact {
+    @apply w-full p-2 bg-transparent border border-gray-500 outline-none focus:border-b-2 focus:border-b-yellow-600 rounded;
+  }
+}
